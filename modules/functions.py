@@ -1,4 +1,9 @@
-FILEPATH = "files/todos.txt"
+import os
+
+if not os.path.exists("files/todos.txt"):
+    FILEPATH = "todos.txt"
+else:
+    FILEPATH = "files/todos.txt"
 
 
 def get_todos(filepath=FILEPATH):
